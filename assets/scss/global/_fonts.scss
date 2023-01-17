@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "GilroyBolt";
+	src: url("/assets/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("/assets/fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+	font-family: "GilroyLight";
+	src: url("/assets/fonts/Gilroy-Light.otf");
+}
+
+.fontstyle_BOLT {
+	font-family: "GilroyBolt";
+	font-weight: 700;
+
+	&.style38766 {
+		font-size: 48px;
+		line-height: 59px;
+	}
+	&.style7652 {
+		font-size: 36px;
+		line-height: 45px;
+	}
+	&.style33178 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+.fontstyle_LIGHT {
+	font-family: "GilroyLight";
+}
