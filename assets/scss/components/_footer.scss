@@ -2,4 +2,9 @@
 	min-height: 332px;
 	padding-bottom: 20px;
 	background-color: var(--color_primany_003);
+
+	@media (max-width: $breakpoint-mobile) {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
 }
