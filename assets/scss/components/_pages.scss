@@ -1,5 +1,7 @@
 #top {
 	@media (max-width: $breakpoint-mobile) {
+		height: calc(100vh - 200px);
+
 		.padd-l-40 {
 			padding-left: 0px;
 		}
@@ -20,6 +22,16 @@
 			z-index: -5;
 		}
 
+		.shape10834 {
+			width: 521px;
+			height: 521px;
+			left: 121px;
+			top: 98px;
+
+			background: var(--color_gradient_000);
+			filter: blur(var(--blur_radius_000));
+		}
+
 		// Next one is Unused
 		.image44588 {
 			width: 671px;
@@ -34,15 +46,6 @@
 			right: 44.28%;
 			top: 4.17%;
 			bottom: 41.13%;
-		}
-		.shape10834 {
-			width: 521px;
-			height: 521px;
-			left: 121px;
-			top: 98px;
-
-			background: var(--color_gradient_000);
-			filter: blur(var(--blur_radius_000));
 		}
 	}
 }
