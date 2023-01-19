@@ -7,13 +7,15 @@
 <head>
 	<!-- META -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, minimum-scale=0.8, maximum-scale=0.8, user-scalable=0" />
 
 	<!-- SITE -->
 	<title>WebArmor(TM)</title>
+	<link rel="icon" type="image/x-icon" href="/assets/icons/favicon.svg">
 
 	<!-- SCRIPTS & CSS-->
-	<link href="styles.css" rel="stylesheet">
+	<link href="/styles.css" rel="stylesheet">
+	<script src="/assets/javascript/jquery.js"></script>
 	<script src="/assets/javascript/scripts.js"></script>
 </head>
 
@@ -21,11 +23,168 @@
 
 <body>
 
-	<div id="header-component">
-		
+	<!-- HEADER -->
+	<div id="header-component" class="fixed flex dir-column jc-center ai-center w-100 gap-10">
+		<div class="flex dir-row jc-spabet ai-center w-max w-100">
+			<a href="#" target="_self"> <!-- Just go to TOP -->
+				<img src="/assets/icons/web-armor-shield_blue-logo.svg">
+			</a>
+			<!-- MENU -->
+			<div id="menu" class="flex dir-row jc-end ai-center gap-100">
+				<div class="flex dir-row jc-spabet ai-end gap-10">
+					<a header href="#">Products & Solutions</a>
+					<a header href="#">Information</a>
+					<a header href="#">Price</a>
+					<a header href="#">Contacts</a>
+				</div>
+				<a header href="#">
+					<div class="flex dir-row jc-center ai-center gap-20">
+						<img height="20px" src="/assets/icons/login-icon.svg">
+						<p id="client-area">Client area</p>
+					</div>
+				</a>
+			</div>
+			<!-- MOBILE MENU -->
+			<div id="mobile-menu" class="">
+				<a header href="#">Menu</a>
+			</div>
+		</div>
 	</div>
 
-	<p>Hello, World</p>
+	<div id="top" class="sing-unset flex dir-column jc-center ai-center padd-t-160">
+		<div class="flex dir-row jc-spabet ai-center w-max-page gap-50 w-100-page">
+			<div class="flex dir-column ai-start gap-55 padd-l-40">
+				<div class="flex dir-column ai-start gap-31">
+					<div class="flex dir-column ai-start">
+						<h1>Reliable Protection</h1>
+						<h1>From DDoS Attacks</h1>
+					</div>
+					<div class="flex dir-column ai-start gap-10">
+						<p>Ensuring regular network presence without customer loss</p>
+						<div>
+							<p>It is a long established fact that a reader will be</p>
+							<p>distracted by the readable content of a page when</p>
+							<p>looking at its layout.</p>
+						</div>
+					</div>
+					<a button href="#" target="_self">Activate</a> 
+				</div>
+			</div>
+			<!-- PLANET ANIMATED -->
+			<!-- <div id="planet-image" class="relative">
+				<div class="absolute shape10834"></div>
+			</div>
+			<div id="bgearth" class="earth-js">
+				<canvas width="657" height="657" style="display: block; width: 525.838px; height: 525.838px;"></canvas>
+			</div> -->
+			<!-- PLANET IMAGE -->
+			<div class="contents">
+				<div id="planet-image" class="relative">
+					<div class="absolute shape10834"></div>
+				</div>
+				<img src="/assets/images/planet-merged.png" id="planet-image" class="z-50">
+			</div>
+		</div>
+	</div>
+
+	<div id="test" class="sing-unset flex dir-column jc-center ai-center padd-t-160">
+		<p>Hello, World</p>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer-component" class="flex dir-column jc-center ai-center w-100 gap-10">
+		<div class="flex dir-row jc-spabet ai-center w-max w-100 gap-20 wrap">
+
+			<!-- COLUMN 1 -->
+			<div class="flex dir-column ai-start gap-35">
+				<img src="/assets/icons/web-armor-gray-logo.svg">
+				<div class="flex dir-column ai-start gap-10">
+					<h3 class="fs gray">Sales</h3>
+					<a gray href="#" target="_self">Enterprise Sales</a>
+					<a gray href="#" target="_self">Become a Partner</a>
+				</div>
+				<!-- SOCIALS -->
+				<div class="flex dir-row ai-center gap-20">
+					<!-- FACEBOOK -->
+					<a gray href="#" target="_self">
+						<svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.5 0C6.04456 0 0 6.08105 0 13.5815C0 20.3593 4.93609 25.9772 11.3911 27V17.5083H7.96175V13.5815H11.3911V10.5892C11.3911 7.18262 13.4068 5.30411 16.4892 5.30411C17.9662 5.30411 19.5135 5.56897 19.5135 5.56897V8.909H17.8069C16.1328 8.909 15.6089 9.95759 15.6089 11.032V13.5788H19.3501L18.752 17.5056H15.6089V26.9973C22.0639 25.9799 27 20.3607 27 13.5815C27 6.08105 20.9554 0 13.5 0Z" fill="currentColor"/>
+						</svg>
+					</a>
+					<!-- INSTAGRAM -->
+					<a gray href="#" target="_self">
+						<svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.4964 8.99808C11.0175 8.99808 8.99454 11.0211 8.99454 13.5C8.99454 15.9789 11.0175 18.0019 13.4964 18.0019C15.9752 18.0019 17.9982 15.9789 17.9982 13.5C17.9982 11.0211 15.9752 8.99808 13.4964 8.99808ZM26.9985 13.5C26.9985 11.6357 27.0154 9.78837 26.9107 7.92748C26.806 5.76602 26.3129 3.84773 24.7324 2.26716C23.1485 0.683215 21.2336 0.19351 19.0722 0.0888138C17.2079 -0.0158819 15.3606 0.00100455 13.4997 0.00100455C11.6355 0.00100455 9.78819 -0.0158819 7.92734 0.0888138C5.76592 0.19351 3.84766 0.686593 2.26712 2.26716C0.683203 3.85111 0.193506 5.76602 0.0888122 7.92748C-0.0158816 9.79174 0.00100453 11.6391 0.00100453 13.5C0.00100453 15.3609 -0.0158816 17.2116 0.0888122 19.0725C0.193506 21.234 0.68658 23.1523 2.26712 24.7328C3.85103 26.3168 5.76592 26.8065 7.92734 26.9112C9.79156 27.0159 11.6389 26.999 13.4997 26.999C15.364 26.999 17.2113 27.0159 19.0722 26.9112C21.2336 26.8065 23.1518 26.3134 24.7324 24.7328C26.3163 23.1489 26.806 21.234 26.9107 19.0725C27.0188 17.2116 26.9985 15.3643 26.9985 13.5ZM13.4964 20.4268C9.66323 20.4268 6.56969 17.3332 6.56969 13.5C6.56969 9.66679 9.66323 6.57319 13.4964 6.57319C17.3295 6.57319 20.423 9.66679 20.423 13.5C20.423 17.3332 17.3295 20.4268 13.4964 20.4268ZM20.7067 7.90722C19.8118 7.90722 19.089 7.18448 19.089 6.2895C19.089 5.39452 19.8118 4.67179 20.7067 4.67179C21.6017 4.67179 22.3244 5.39452 22.3244 6.2895C22.3247 6.50202 22.283 6.7125 22.2018 6.90889C22.1206 7.10528 22.0015 7.28373 21.8512 7.434C21.7009 7.58427 21.5225 7.70342 21.3261 7.78462C21.1297 7.86583 20.9192 7.90749 20.7067 7.90722Z" fill="currentColor"/>
+						</svg>
+					</a>
+					<!-- IN -->
+					<a gray href="#" target="_self">
+						<svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 1.93388C0 0.865687 0.887625 0 1.98281 0H25.0172C26.1124 0 27 0.865687 27 1.93388V25.0661C27 26.1343 26.1124 27 25.0172 27H1.98281C0.887625 27 0 26.1343 0 25.0661V1.93388ZM8.34131 22.6024V10.4102H4.28963V22.6024H8.34131ZM6.31631 8.74463C7.72875 8.74463 8.60794 7.80975 8.60794 6.63863C8.58262 5.44219 7.73044 4.53263 6.34331 4.53263C4.95619 4.53263 4.05 5.44387 4.05 6.63863C4.05 7.80975 4.92919 8.74463 6.28931 8.74463H6.31631ZM14.5986 22.6024V15.7933C14.5986 15.4288 14.6256 15.0643 14.7336 14.8044C15.0255 14.0771 15.6921 13.3228 16.8126 13.3228C18.279 13.3228 18.8646 14.4399 18.8646 16.0802V22.6024H22.9163V15.6094C22.9163 11.8631 20.9182 10.1216 18.252 10.1216C16.1021 10.1216 15.1386 11.3029 14.5986 12.1348V12.177H14.5716C14.5805 12.1629 14.5895 12.1489 14.5986 12.1348V10.4102H10.5486C10.5992 11.5543 10.5486 22.6024 10.5486 22.6024H14.5986Z" fill="currentColor"/>
+						</svg>							
+					</a>
+					<!-- BIRD TWITTER -->
+					<a gray href="#" target="_self">
+						<svg width="24" height="19" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24.2261 5.48277C24.2439 5.72397 24.2439 5.96379 24.2439 6.20361C24.2439 13.5429 18.6755 22 8.49898 22C5.36373 22 2.45105 21.089 0 19.5067C0.445146 19.5577 0.873804 19.5756 1.33681 19.5756C3.82769 19.5817 6.24804 18.7461 8.20771 17.2036C7.05284 17.1826 5.93332 16.8004 5.00547 16.1103C4.07762 15.4201 3.38776 14.4566 3.03221 13.3541C3.37431 13.4051 3.71779 13.4395 4.07775 13.4395C4.57373 13.4395 5.07246 13.3706 5.53547 13.2507C4.28214 12.9969 3.15514 12.3154 2.34611 11.3221C1.53708 10.3288 1.09596 9.08509 1.09775 7.80241V7.73349C1.83554 8.1456 2.69148 8.40333 3.59826 8.43779C2.83861 7.93139 2.21573 7.24424 1.78517 6.43763C1.35462 5.63102 1.12978 4.73003 1.13072 3.81506C1.13072 2.78411 1.40413 1.83862 1.88363 1.01441C3.27421 2.73039 5.00858 4.13422 6.97441 5.13498C8.94024 6.13574 11.0937 6.71111 13.2953 6.82383C13.2101 6.41035 13.1579 5.98171 13.1579 5.55169C13.1575 4.82253 13.3004 4.10044 13.5784 3.42672C13.8564 2.75299 14.264 2.14084 14.778 1.62524C15.2919 1.10965 15.9022 0.70073 16.5738 0.42186C17.2453 0.14299 17.9651 -0.00036163 18.692 6.85089e-07C20.2857 6.85089e-07 21.7242 0.669841 22.7354 1.75316C23.9743 1.51282 25.1625 1.0591 26.2471 0.412104C25.8341 1.69502 24.969 2.78288 23.8139 3.47187C24.9127 3.34614 25.9867 3.05626 27 2.61183C26.2432 3.71872 25.3053 4.68936 24.2261 5.48277Z" fill="currentColor"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<!-- COLUMN 2 -->
+			<div class="flex dir-column ai-start gap-35">
+				<div class="flex dir-column ai-start gap-10">
+					<h3 class="fs gray">Community</h3>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+				</div>
+			</div>
+
+			<!-- COLUMN 3 -->
+			<div class="flex dir-column ai-start gap-35">
+				<div class="flex dir-column ai-start gap-10">
+					<h3 class="fs gray">Getting Started</h3>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+				</div>
+			</div>
+
+			<!-- COLUMN 4 -->
+			<div class="flex dir-column ai-start gap-35">
+				<div class="flex dir-column ai-start gap-10">
+					<h3 class="fs gray">Community</h3>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+				</div>
+			</div>
+
+			<!-- COLUMN 5 -->
+			<div class="flex dir-column ai-start gap-35">
+				<div class="flex dir-column ai-start gap-10">
+					<h3 class="fs gray">Getting Started</h3>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+					<a gray href="#" target="_self">Pricing</a>
+					<a gray href="#" target="_self">Webinars</a>
+					<a gray href="#" target="_self">Learning Center</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 

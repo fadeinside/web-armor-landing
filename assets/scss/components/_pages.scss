@@ -1,0 +1,48 @@
+#top {
+	@media (max-width: $breakpoint-mobile) {
+		.padd-l-40 {
+			padding-left: 0px;
+		}
+		.ai-start {
+			align-items: center;
+		}
+		.w-100-page {
+			width: unset;
+		}
+	}
+
+	#planet-image {
+		width: auto;
+		height: 556px;
+
+		@media (max-width: $breakpoint-mobile) {
+			position: absolute;
+			z-index: -5;
+		}
+
+		// Next one is Unused
+		.image44588 {
+			width: 671px;
+			height: 671px;
+			left: 48px;
+			top: 0px;
+		}
+		.image39151 {
+			height: 367px;
+			width: 400.648193359375px;
+			left: 0%;
+			right: 44.28%;
+			top: 4.17%;
+			bottom: 41.13%;
+		}
+		.shape10834 {
+			width: 521px;
+			height: 521px;
+			left: 121px;
+			top: 98px;
+
+			background: var(--color_gradient_000);
+			filter: blur(var(--blur_radius_000));
+		}
+	}
+}

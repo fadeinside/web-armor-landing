@@ -1,14 +1,20 @@
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
 :root {
 	--color_primany_000: rgb(255, 255, 255);
 	--color_primany_001: rgb(55, 55, 55);
 	--color_primany_002: rgb(20, 44, 255);
 	--color_primany_003: rgb(4, 4, 4);
 	--color_primany_004: rgb(35, 35, 35);
-	--color_primany_005: rgb(0, 26, 255);
+	--color_primany_005: rgb(3, 13, 105);
 	--color_primany_006: rgb(183, 183, 183);
 	--color_primany_007: rgb(0, 0, 0);
 	--color_primany_008: rgb(111, 111, 111);
 	--color_primany_009: rgb(160, 160, 160);
+	--color_primany_010: rgb(255, 255, 255);
+	--color_primany_011: rgba(20, 43, 255, 0.4);
+	--color_primany_012: rgba(255, 255, 255, 0.145);
 	--color_gradient_000: linear-gradient(194.46deg, rgb(36, 0, 255) -7.74%, rgb(96, 51, 35) 86%);
 	--blur_radius_000: 110.5px;
 }

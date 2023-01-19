@@ -13,24 +13,44 @@
 	src: url("/assets/fonts/Gilroy-Light.otf");
 }
 
-.fontstyle_BOLT {
-	font-family: "GilroyBolt";
-	font-weight: 700;
-
-	&.style38766 {
-		font-size: 48px;
-		line-height: 59px;
+.fs {
+	&.gray {
+		color: var(--color_primany_001);
 	}
-	&.style7652 {
-		font-size: 36px;
-		line-height: 45px;
-	}
-	&.style33178 {
-		font-size: 16px;
-		line-height: 20px;
+	
+	&.LIGHT {
+		font-family: "GilroyLight";
 	}
 }
 
-.fontstyle_LIGHT {
-	font-family: "GilroyLight";
+h1 {
+	font-family: "GilroyBolt";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 59px;
+}
+
+h2 {
+	font-family: "GilroyBolt";
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 45px;
+}
+
+h3 {
+	font-family: "GilroyBolt";
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h4 {
+	font-family: "GilroyBolt";
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 59px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0px;
 }

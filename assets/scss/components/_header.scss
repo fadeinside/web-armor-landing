@@ -1,12 +1,24 @@
 #header-component {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0px;
-	gap: 10px;
-	
-	.display-frame5962 {
+	height: 160px;
+	transition: 0.5s;
+	z-index: 666;
 
+	#menu {
+		@media (max-width: $breakpoint-mobile) {
+			display: none;
+		}
+	}
+
+	#mobile-menu {
+		display: none;
+		@media (max-width: $breakpoint-mobile) {
+			display: flex;
+		}
+	}
+
+	#client-area {
+		@media (max-width: $breakpoint-tablet) {
+			display: none;
+		}
 	}
 }
