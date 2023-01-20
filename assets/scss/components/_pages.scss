@@ -1,12 +1,9 @@
 #top {
 	@media (max-width: $breakpoint-mobile) {
-		height: calc(100vh - 200px);
+		height: calc(100vh - 300px);
 
 		.padd-l-40 {
 			padding-left: 0px;
-		}
-		.ai-start {
-			align-items: center;
 		}
 		.w-100-page {
 			width: unset;
@@ -20,6 +17,7 @@
 		@media (max-width: $breakpoint-mobile) {
 			position: absolute;
 			z-index: -5;
+			left: 36px;
 		}
 
 		.shape10834 {
@@ -47,5 +45,19 @@
 			top: 4.17%;
 			bottom: 41.13%;
 		}
+	}
+}
+
+#solutions {
+	.card {
+		max-width: 230px;
+		min-height: 180px;
+		@media (max-width: $breakpoint-mobile) {
+			width: 100%;
+			max-width: unset;
+		}
+	}
+	img {
+		max-height: 43px;
 	}
 }

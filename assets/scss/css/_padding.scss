@@ -2,11 +2,21 @@
 	padding: 0px;
 }
 
-// Padding for page to exclude header height
+.padd-24 {
+	padding: 24px;
+}
+
 .padd-t-160 {
 	padding-top: 160px;
 }
 
 .padd-l-40 {
 	padding-left: 40px;
+}
+
+.mobile-padd {
+	@media (max-width: calc($breakpoint-tablet + 40px)) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }

@@ -2,6 +2,7 @@
 	min-height: 332px;
 	padding-bottom: 20px;
 	background-color: var(--color_primany_003);
+	position: sticky;
 
 	@media (max-width: $breakpoint-mobile) {
 		padding-top: 40px;
