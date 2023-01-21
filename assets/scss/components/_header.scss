@@ -21,3 +21,12 @@
 		}
 	}
 }
+
+#opened-menu {
+	left: calc(100% - 242px);
+	top: 120px;
+
+	&.closed {
+		display: none !important;
+	}
+}

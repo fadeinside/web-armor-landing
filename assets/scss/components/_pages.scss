@@ -61,3 +61,14 @@
 		max-height: 43px;
 	}
 }
+
+#plans {
+	.card {
+		max-width: 265px;
+		min-height: 600px;
+		@media (max-width: $breakpoint-mobile) {
+			width: 100%;
+			max-width: unset;
+		}
+	}
+}

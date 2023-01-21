@@ -30,11 +30,11 @@
 				<img src="assets/icons/web-armor-shield_blue-logo.svg">
 			</a>
 			<!-- MENU -->
-			<div id="menu" class="flex dir-row jc-end ai-center gap-100">
-				<div class="flex dir-row jc-spabet ai-end gap-10">
-					<a header href="#">Products & Solutions</a>
+			<div id="menu" class="flex dir-row jc-end ai-center gap-70">
+				<div class="flex dir-row jc-spabet ai-end gap-5">
+					<a header href="#solutions">Products & Solutions</a>
 					<a header href="#">Information</a>
-					<a header href="#">Price</a>
+					<a header href="#plans">Price</a>
 					<a header href="#">Contacts</a>
 				</div>
 				<a header href="#">
@@ -44,39 +44,46 @@
 					</div>
 				</a>
 			</div>
-			<!-- MOBILE MENU -->
-			<div id="mobile-menu" class="">
-				<a header href="#">Menu</a>
-			</div>
+			<!-- MOBILE MENU BUTTON -->
+			<a header id="mobile-menu">Menu</a>
 		</div>
 	</div>
+
+	<!-- MOBILE MENU -->
+	<div id="opened-menu" class="fixed closed card nohover flex dir-column ai-start padd-20 gap-10 z-666">
+		<a header class="w-100i" href="#solutions">Products & Solutions</a>
+		<a header class="w-100i" href="#">Information</a>
+		<a header class="w-100i" href="#plans">Price</a>
+		<a header class="w-100i" href="#">Contacts</a>
+		<div class="line"></div>
+		<a header href="#" class="w-100i">
+			<div class="flex dir-row jc-center ai-center gap-20">
+				<img height="20px" src="assets/icons/login-icon.svg">
+				<p id="client-area">Client area</p>
+			</div>
+		</a>
+	</div>
+
 	<!-- WELCOME -->
 	<div id="top" class="sing-unset flex dir-column jc-center ai-center padd-t-160">
 		<div class="flex dir-row jc-spabet ai-center w-max-page gap-50 w-100-page mobile-padd">
 			<div class="flex dir-column ai-start gap-55 padd-l-40">
 				<div class="flex dir-column ai-start gap-31">
 					<div class="flex dir-column ai-start">
-						<h1>Reliable Protection</h1>
-						<h1>From DDoS Attacks</h1>
+						<h1 class="wb-unset">Reliable Protection</h1>
+						<h1 class="wb-unset">From DDoS Attacks</h1>
 					</div>
 					<div class="flex dir-column ai-start gap-10">
-						<p>Ensuring regular network presence without customer loss</p>
+						<p class="wb-unset">Ensuring regular network presence without customer loss</p>
 						<div>
-							<p>It is a long established fact that a reader will be</p>
-							<p>distracted by the readable content of a page when</p>
-							<p>looking at its layout.</p>
+							<p class="wb-unset">It is a long established fact that a reader will be</p>
+							<p class="wb-unset">distracted by the readable content of a page when</p>
+							<p class="wb-unset">looking at its layout.</p>
 						</div>
 					</div>
 					<a button href="#" target="_self">Activate</a> 
 				</div>
 			</div>
-			<!-- PLANET ANIMATED -->
-			<!-- <div id="planet-image" class="relative">
-				<div class="absolute shape10834"></div>
-			</div>
-			<div id="bgearth" class="earth-js">
-				<canvas width="657" height="657" style="display: block; width: 525.838px; height: 525.838px;"></canvas>
-			</div> -->
 			<!-- PLANET IMAGE -->
 			<div class="contents">
 				<div id="planet-image" class="relative">
@@ -137,7 +144,7 @@
 						</div>
 					</a>
 				</div>
-				<!-- New line -->
+				<!-- Next line -->
 				<div class="wrap flex dir-row ai-start gap-30">
 					<!-- CARD 4 -->
 					<a none href="#" target="_self" class="card flex dir-column ai-start padd-24 gap-10">
@@ -185,15 +192,203 @@
 			
 		</div>
 	</div>
+	<!-- PLANS -->
+	<div id="plans" class="sing-unset flex dir-column jc-center ai-center padd-t-160">
+		<div class="flex dir-column ai-center jc-center gap-40 mobile-padd">
+			<h2>Service Plans</h2>
 
-	<div id="test" class="sing-unset flex dir-column jc-center ai-center padd-t-160">
-		<p>Hello, World</p>
+			<!-- CARD LIST -->
+			<div class="wrap flex dir-row ai-center jc-center gap-30">
+				<!-- CARD -->
+				<div class="card flex dir-column ai-start padd-lr-30 padd-tb-50 gap-50">
+					<div class="flex dir-column ai-center gap-16 w-100">
+						<h4>Basic</h4>
+						<h5 class="fs accent">$100</h5>
+						<h5 class="fs gray">Monthly</h5>
+					</div>
+					<div class="flex dir-column ai-start gap-30">
+						<!-- FIRST LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Support response time up to 6 hours</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Block/Allow lists up to 3 rules each</p>
+							</div>
+						</div>
+						<h5>Key advantages</h5>
+						<!-- SECOND LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Free SSL certificate</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex dir-column ai-center gap-10 w-100">
+						<a button href="#" target="_self">Activate</a>
+					</div>
+				</div>
+
+				<!-- CARD -->
+				<div class="card flex dir-column ai-start padd-lr-30 padd-tb-50 gap-50">
+					<div class="flex dir-column ai-center gap-16 w-100">
+						<h4>Medium</h4>
+						<h5 class="fs accent">$500</h5>
+						<h5 class="fs gray">Monthly</h5>
+					</div>
+					<div class="flex dir-column ai-start gap-30">
+						<!-- FIRST LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Support response time up to 6 hours</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Block/Allow lists up to 3 rules each</p>
+							</div>
+						</div>
+						<h5>Key advantages</h5>
+						<!-- SECOND LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Free SSL certificate</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex dir-column ai-center gap-10 w-100">
+						<a button href="#" target="_self">Activate</a>
+					</div>
+				</div>
+
+				<!-- CARD -->
+				<div class="card flex dir-column ai-start padd-lr-30 padd-tb-50 gap-50">
+					<div class="flex dir-column ai-center gap-16 w-100">
+						<h4>Premium</h4>
+						<h5 class="fs accent">$1000</h5>
+						<h5 class="fs gray">Monthly</h5>
+					</div>
+					<div class="flex dir-column ai-start gap-30">
+						<!-- FIRST LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Support response time up to 6 hours</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Block/Allow lists up to 3 rules each</p>
+							</div>
+						</div>
+						<h5>Key advantages</h5>
+						<!-- SECOND LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Free SSL certificate</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex dir-column ai-center gap-10 w-100">
+						<a button href="#" target="_self">Activate</a>
+					</div>
+				</div>
+
+				<!-- CARD -->
+				<div class="card flex dir-column ai-start padd-lr-30 padd-tb-50 gap-50">
+					<div class="flex dir-column ai-center gap-16 w-100">
+						<h4>Enterprise</h4>
+						<h5 class="fs accent">$2000</h5>
+						<h5 class="fs gray">Monthly</h5>
+					</div>
+					<div class="flex dir-column ai-start gap-30">
+						<!-- FIRST LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Support response time up to 6 hours</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Block/Allow lists up to 3 rules each</p>
+							</div>
+						</div>
+						<h5>Key advantages</h5>
+						<!-- SECOND LIST -->
+						<div class="flex dir-column ai-start gap-10">
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">1 domain under protection</p>
+							</div>
+							<!-- ITEM -->
+							<div class="flex dir-row ai-start gap-20">
+								<img src="assets/icons/blue-done-icon.svg">
+								<p class="fs small-p">Free SSL certificate</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex dir-column ai-center gap-10 w-100">
+						<a button href="#" target="_self">Activate</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
+	
 	<!-- FOOTER -->
-	<div id="footer-component" class="flex dir-column jc-center ai-center w-100 mobile-padd gap-10 z-666">
+	<div id="footer-component" class="flex dir-column jc-center ai-center w-100 mobile-padd gap-10 z-100">
 		<div class="flex dir-row jc-spabet ai-center w-max w-100 gap-20 wrap">
-
 			<!-- COLUMN 1 -->
 			<div class="flex dir-column ai-start gap-35">
 				<img src="assets/icons/web-armor-gray-logo.svg">
@@ -284,7 +479,6 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 
 </html>

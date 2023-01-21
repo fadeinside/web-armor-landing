@@ -8,18 +8,12 @@
 	src: url("assets/fonts/Gilroy-Medium.ttf");
 }
 
-@font-face {
-	font-family: "GilroyLight";
-	src: url("assets/fonts/Gilroy-Light.otf");
-}
-
 .fs {
 	&.gray {
 		color: var(--color_primany_001);
 	}
-	
-	&.LIGHT {
-		font-family: "GilroyLight";
+	&.accent {
+		color: var(--color_primany_002);
 	}
 
 	&.small-p {
@@ -51,12 +45,25 @@ h3 {
 }
 
 h4 {
-	font-family: "GilroyBolt";
+	font-family: "Gilroy";
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 59px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h5 {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0px;
+	word-break: break-word;
+}
+
+.wb-unset {
+	word-break: normal !important;
 }

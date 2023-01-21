@@ -1,7 +1,5 @@
 .card {
 	box-sizing: border-box;
-	padding: 24px;
-	gap: 10px;
 
 	background-color: var(--color_primany_003);
 	border: 1px solid var(--color_primany_004);
@@ -9,7 +7,22 @@
 
 	transition: 0.2s;
 
+	&.nohover {
+		transform: none !important;
+	}
+
 	&:hover {
 		transform: translateY(-4px);
+	}
+}
+
+.line {
+	background-color: var(--color_primany_004);
+	width: 100%;
+	height: 1px;
+
+	.ver {
+		width: 1px;
+		height: 100%;
 	}
 }

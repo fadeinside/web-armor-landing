@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-	updateRippleEffect()
+	updateRippleEffect();
+	updateMobileMenu();
 });
 
 function updateRippleEffect() {
@@ -19,35 +20,34 @@ function updateRippleEffect() {
 	});
 };
 
+function updateMobileMenu() {
+	// ИД элемента кнопки меню
+	var mobilekey = "#mobile-menu";
+	// ИД элемента мобильного меню
+	var menuKey = "#opened-menu";
+	// Клас для закрытия меню
+	var close = "closed";
+
+	// Закрыть/Открыть меню при нажатии на кнопку
+	$(mobilekey).on("click", function (e) {
+		$(menuKey).toggleClass(close);
+	});
+	// Закрыть меню при клике вне кнопки
+	$(document).mouseup(function (e) {
+		if (!$(mobilekey).is(e.target) && $(mobilekey).has(e.target).length === 0) {
+			$(menuKey).addClass(close);
+		};
+	});
+	// Также закройте меню при скроле
+	$(document).scroll(function () {
+		$(menuKey).addClass(close);
+	});
+};
+
 window.onscroll = function () {
 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		console.log("erv")
 		document.getElementById("header-component").style.backgroundColor = "var(--color_primany_003)";
 	} else {
 		document.getElementById("header-component").style.backgroundColor = "unset";
 	}
 }
-
-window.addEventListener("load", function () {
-	var script = document.createElement("script");
-	script.src = "./assets/javascript/miniature.earth.js";
-	document.body.appendChild(script);
-});
-
-window.addEventListener("earthjsload", function () {
-	new Earth("bgearth", {
-		location: { lat: 30, lng: -10 },
-		light: "false",
-		autoRotate: true,
-		autoRotateDelay: 0,
-		autoRotateStart: 1500,
-		mapLandColor: "#fff",
-		mapSeaColor: "#00000030",
-		mapBorderColor: "#fff",
-		mapBorderWidth: 0.5,
-		transparent: true,
-		zoom: 1.2,
-		quality: 5,
-		draggable: true
-	});
-});
