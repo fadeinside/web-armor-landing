@@ -25,7 +25,7 @@ details {
 	&[open] {
 		summary {
 			&::after {
-				content: url("/assets/icons/arrow-open.svg");
+				content: url("assets/icons/arrow-open.svg");
 			}
 		}
 	}
@@ -38,7 +38,7 @@ summary {
     justify-content: space-between;
 
 	&::after {
-		content: url("/assets/icons/arrow-closed.svg");
+		content: url("assets/icons/arrow-closed.svg");
 		height: 15px;
 	}
 }
