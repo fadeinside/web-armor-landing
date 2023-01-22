@@ -1,0 +1,40 @@
+
+.w-max {
+	max-width: $breakpoint-tablet;
+}
+
+.w-max-page {
+	max-width: calc($breakpoint-tablet + 200px);
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-100i {
+	width: 100% !important;
+}
+
+.maw-750px {
+	max-width: 750px;
+}
+
+.w-100-page {
+	width: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.h-inher {
+	height: inherit;
+}
+
+.mih-inher {
+	min-height: inherit;
+}
+
+.sing-unset {
+	box-sizing: unset;
+}

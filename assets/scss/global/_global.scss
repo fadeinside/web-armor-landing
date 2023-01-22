@@ -23,3 +23,17 @@ html, body {
 	// Shit...
 	overflow-x: hidden;
 }
+
+img {
+	user-select: none;
+	content-visibility: auto;
+	object-fit: contain;
+
+	&:not([src]) {
+		display: none;
+	}
+
+	&[src=""] {
+		display: none;
+	}
+}
