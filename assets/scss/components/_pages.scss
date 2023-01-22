@@ -1,3 +1,8 @@
+@keyframes levitate {
+	0% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
+}
+
 #top {
 	@media (max-width: $breakpoint-mobile) {
 		height: calc(100vh - 300px);
@@ -13,6 +18,8 @@
 	#planet-image {
 		width: auto;
 		height: 556px;
+
+		animation: levitate 2s alternate ease-in-out infinite;
 
 		@media (max-width: $breakpoint-mobile) {
 			position: absolute;
