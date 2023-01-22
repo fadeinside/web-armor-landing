@@ -25,7 +25,7 @@ function updateMobileMenu() {
 	var mobilekey = "#mobile-menu";
 	// ИД элемента мобильного меню
 	var menuKey = "#opened-menu";
-	// Клас для закрытия меню
+	// Класс для закрытия меню
 	var close = "closed";
 
 	// Закрыть/Открыть меню при нажатии на кнопку
@@ -44,10 +44,18 @@ function updateMobileMenu() {
 	});
 };
 
-window.onscroll = function () {
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		document.getElementById("header-component").style.backgroundColor = "var(--color_primany_003)";
+$(document).scroll(function () {
+	// Значение скрола, после которого хедер окрасится
+	var deadline = 80;
+	// ИД элемента хедера
+	var headerKey = "#header-component"
+	// Класс для закрытия меню
+	var field = "scrolled";
+
+	// Установить класс при достижении лимита, иначе снять
+	if (document.body.scrollTop > deadline || document.documentElement.scrollTop > deadline) {
+		$(headerKey).addClass(field);
 	} else {
-		document.getElementById("header-component").style.backgroundColor = "unset";
+		$(headerKey).removeClass(field);
 	}
-}
+});
